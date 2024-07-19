@@ -21,4 +21,4 @@ jobs:
       - name: List files
         run: ls -al
       - name: display variable
-        run: echo ${{ CONTEXT.TEST }}
+        run: echo ${{ env.TEST }}
