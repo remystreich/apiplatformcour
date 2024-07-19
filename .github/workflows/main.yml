@@ -8,7 +8,7 @@ on:
       - main
 jobs:
   hello-world:
-    runs-on: ubuntu-latest
+    runs-on: debian-latest
     steps:
       - name: Exécuter une action
         uses: actions/hello-world-docker-action@v1
