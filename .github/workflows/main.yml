@@ -6,6 +6,10 @@ on:
   pull_request:
     branches:
       - main
+      
+env:
+ VARIABLE_NAME: value
+
 jobs:
   hello-world:
     runs-on: ubuntu-latest
@@ -16,3 +20,5 @@ jobs:
         run: mkdir new_directory
       - name: List files
         run: ls -al
+      - name: display variable
+        run: echo ${{ env.VARIABLE_NAME }}
